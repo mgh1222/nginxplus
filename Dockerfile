@@ -4,6 +4,8 @@ MAINTAINER Deep Dutta "duttadeep55@outlook.com"
 
 RUN yum install -y ca-certificates
 
+RUN yum install -y wget
+
 # Download certificate and key from the customer portal (https://cs.nginx.com)
 # and copy to the build context
 ADD nginx-repo.crt /etc/ssl/nginx/
